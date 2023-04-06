@@ -50,6 +50,7 @@ Considering you already have Ruby on your host machine, you can use make to read
 ```sh
 make run FILE=[name of file]
 ```
+
 ![ruby-test 1](./media/ruby-test-1.gif)
 
 ### Simple tuto
@@ -64,7 +65,9 @@ When you enter your word, you'll see that your sentence is broken down into two 
 
 ### Examples
 
-- example_1 : convert the answer from string to number and test if the number is even
+- example_1: convert the answer from string to number and test if the number is even, conditions
+- example_2: Guess the number, comparison
+- example_3: Is the word a palindrom ?
 
 ## Useful Resources
 
@@ -111,6 +114,23 @@ Variables
 ```rb
 varname = "Hello"
 ```
+
+Conditions
+
+```rb
+&& # AND
+|| # OR
+! # reverse everything after
+```
+
+Conventions
+
+```rb
+method? # the ? gives a boolean
+varname! # the ! indicate that value is modified
+```
+
+![test](./media/ruby-test-2.gif)
 
 ## Sources
 
