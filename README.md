@@ -80,6 +80,7 @@ make run_example FILE=example_1
 - example_7: Loop, guess again the number WHILE loop
 - example_8: Loop, guess again the number FOR loop, each for arrays and hash
 - example_9: Loop, iterator LOOP BREAK
+- example_10: Frequency of a word
 
 ## Useful Resources
 
