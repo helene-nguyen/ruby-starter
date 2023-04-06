@@ -77,8 +77,9 @@ make run_example FILE=example_1
 - example_4: array
 - example_5: Hash and Hash class
 - example_6: Symbols
-- example_7: Loop, guess again the number
-
+- example_7: Loop, guess again the number WHILE loop
+- example_8: Loop, guess again the number FOR loop, each for arrays and hash
+- example_9: Loop, iterator LOOP BREAK
 
 ## Useful Resources
 
@@ -142,6 +143,7 @@ varname! # the ! indicate that value is modified
 ```
 
 Convert
+
 ```rb
 to_i # convert to integer
 to_s # convert to string
