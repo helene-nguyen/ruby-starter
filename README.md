@@ -25,6 +25,7 @@ Hope it can help :)
   - [Simple tuto](#simple-tuto)
   - [Ask a question](#ask-a-question)
   - [Examples](#examples)
+  - [Some tips](#tips)
 - Useful resources :
 
   - [Reserved word](#reserved-words)
@@ -82,6 +83,10 @@ make run_example FILE=example_1
 - example_9: Loop, iterator LOOP BREAK
 - example_10: Frequency of a word
 - example_11: Methods
+
+## Tips
+
+
 
 ## Useful Resources
 
