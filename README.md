@@ -17,17 +17,103 @@ You'll find here some examples of using Ruby for my personnal use and test.
 
 Hope it can help :)
 
+## Summary
+
+- [Tools and version](#tools-and-versions)
+- Test files :
+  - [Requirements and Makefile usage](#requirements-and-makefile-usage)
+  - [Simple tuto](#simple-tuto)
+  - [Ask a question](#ask-a-question)
+  - [Examples](#examples)
+- Useful resources :
+
+  - [Reserved word](#reserved-words)
+  - [Keywords and methods](#keywords-and-methods)
+
+- [Sources](#sources)
+
 ## Tools and versions
 
 - OS
-Kali Linux OS - Ruby v3.1.2
-Windows OS - Ruby v3.2.2
+  Kali Linux OS - Ruby v3.1.2
+  Windows OS - Ruby v3.2.2
 
 - IDE
-VSCodium v1.77.1
+  VSCodium v1.77.1
 
+## Test files
 
+### Requirements and Makefile usage
+
+Considering you already have Ruby on your host machine, you can use make to read any file inside this repo
+
+```sh
+make run FILE=[name of file]
+```
+![ruby-test 1](./media/ruby-test-1.gif)
+
+### Simple tuto
+
+`tuto.rb` is a simple ruby tutorial
+
+### Ask a question
+
+`ask-question.rb` use the method `gets` and `chomp`
+
+When you enter your word, you'll see that your sentence is broken down into two lines and chomp can remove "\n" from the answer.
+
+### Examples
+
+- example_1 : convert the answer from string to number and test if the number is even
+
+## Useful Resources
+
+### Reserved Words
+
+The following list shows the reserved words in Ruby.
+These words may not be used as constant or variable names.
+
+![reserved words](./media/reserved-words.png)
+
+### Keywords and methods
+
+Single line comment:
+
+```rb
+# This is a comment
+```
+
+Block comment
+
+```rb
+=begin
+This is a comment
+And another line
+And another comment
+=end
+```
+
+Create method
+
+```rb
+def method_name
+    code
+end
+
+#with parameters
+def method_name(params)
+    code
+end
+```
+
+Variables
+
+```rb
+varname = "Hello"
+```
 
 ## Sources
 
-[Features found here](https://www.tutorialspoint.com/ruby/ruby_overview.htm#:~:text=Features%20of%20Ruby,similar%20to%20Python%20and%20PERL.)
+- [Features](https://www.tutorialspoint.com/ruby/ruby_overview.htm#:~:text=Features%20of%20Ruby,similar%20to%20Python%20and%20PERL.)
+
+- [Reserved words](https://www.tutorialspoint.com/ruby/ruby_syntax.htm)
