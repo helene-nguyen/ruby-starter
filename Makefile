@@ -4,4 +4,4 @@ run:
 	ruby ./src/$(FILE)
 
 run_example:
-	ruby ./src/examples/$(FILE)
+	ruby ./src/examples/$(FILE).rb

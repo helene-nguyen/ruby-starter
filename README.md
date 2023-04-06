@@ -65,9 +65,20 @@ When you enter your word, you'll see that your sentence is broken down into two 
 
 ### Examples
 
+Launch an example :
+
+```sh
+make run_example FILE=example_1
+```
+
 - example_1: convert the answer from string to number and test if the number is even, conditions
 - example_2: Guess the number, comparison
 - example_3: Is the word a palindrom ?
+- example_4: array
+- example_5: Hash and Hash class
+- example_6: Symbols
+- example_7: Loop, guess again the number
+
 
 ## Useful Resources
 
@@ -128,6 +139,12 @@ Conventions
 ```rb
 method? # the ? gives a boolean
 varname! # the ! indicate that value is modified
+```
+
+Convert
+```rb
+to_i # convert to integer
+to_s # convert to string
 ```
 
 ![test](./media/ruby-test-2.gif)
