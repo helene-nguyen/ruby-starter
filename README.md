@@ -21,11 +21,13 @@ Hope it can help :)
 
 - [Tools and version](#tools-and-versions)
 - Test files :
+
   - [Requirements and Makefile usage](#requirements-and-makefile-usage)
   - [Simple tuto](#simple-tuto)
   - [Ask a question](#ask-a-question)
   - [Examples](#examples)
   - [Some tips](#tips)
+
 - Useful resources :
 
   - [Reserved word](#reserved-words)
@@ -83,10 +85,17 @@ make run_example FILE=example_1
 - example_9: Loop, iterator LOOP BREAK
 - example_10: Frequency of a word
 - example_11: Methods
+- example_12: Block & proc
 
 ## Tips
 
+- Antoher way to create an array of string
 
+```rb
+%w{apple pear fig} => ["apple", "pear", "fig"] # shortcut
+```
+
+- respond_to?(:method_name) => let you check if the value given can be used for the method, give a boolean value
 
 ## Useful Resources
 
@@ -157,6 +166,42 @@ to_s # convert to string
 ```
 
 ![test](./media/ruby-test-2.gif)
+
+Insert value
+
+```rb
+# same result
+"Hello" + "World" => "Hello" << "World"
+```
+
+![test 3](./media/ruby-test-3.gif)
+
+Block
+
+```rb
+def demo_1
+  puts "Hello"
+  yield # add the block "How are you?"
+  puts "Bye bye"
+end
+
+demo_1 { puts "How are you?" } # you have to add a block with yield keyword
+```
+
+Error in case you didn't add block:
+
+![yield error](./media/yield_error.png)
+
+Proc
+
+```rb
+proc_name = Proc.new { ...code }
+
+method_name(other_params, &proc_name)
+
+# the & is for casting the new proc into block
+
+```
 
 ## Sources
 
