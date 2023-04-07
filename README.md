@@ -1,3 +1,5 @@
+![starter image](./media/starter.png)
+
 # Start with Ruby
 
 ## Introduction
@@ -126,7 +128,6 @@ make run_example FILE=example_1
 
 - respond_to?(:method_name) => let you check if the value given can be used for the method, give a boolean value
 
-
 - convert array of mixed number int and string into array of integer:
 
 ```rb
@@ -141,7 +142,7 @@ puts array_1.inspect
 # Solution 2
 array_2 = array.map(&:to_i)
 puts array_2.inspect
-``` 
+```
 
 ## Useful Resources
 
@@ -249,7 +250,7 @@ method_name(other_params, &proc_name)
 
 proc_name.call(give_args) # reuse proc registered
 
-lambda { } # a special proc and wait for a specific number of argument 
+lambda { } # a special proc and wait for a specific number of argument
 ```
 
 ```rb
