@@ -80,3 +80,7 @@ display_elem_over_average = Proc.new { |element| # param from yield
 }
 
 pointsOverAverage(object_2, average_2, &display_elem_over_average)
+
+# use our proc and give it another argument
+
+display_elem_over_average.call({ name: "square", color: "blue", points: 10 })

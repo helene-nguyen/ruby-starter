@@ -20,6 +20,7 @@ Hope it can help :)
 ## Summary
 
 - [Tools and version](#tools-and-versions)
+- [Folder structure](#folder-structure)
 - Test files :
 
   - [Requirements and Makefile usage](#requirements-and-makefile-usage)
@@ -43,6 +44,32 @@ Hope it can help :)
 
 - IDE
   VSCodium v1.77.1
+
+## Folder structure
+
+```sh
+├── Makefile
+├── README.md
+└── src
+   ├── examples
+   |  ├── example_1.rb
+   |  ├── example_2.rb
+   |  ├── example_3.rb
+   |  ├── example_4.rb
+   |  ├── example_5.rb
+   |  ├── example_6.rb
+   |  ├── example_7.rb
+   |  ├── example_8.rb
+   |  └── example_9.rb
+   |  ├── example_10.rb
+   |  ├── example_11.rb
+   |  ├── example_12.rb
+   |  ├── example_13.rb
+   |  ├── example_14.rb
+   ├── ask-question.rb
+   ├── tips.rb
+   └── tuto.rb
+```
 
 ## Test files
 
@@ -86,6 +113,8 @@ make run_example FILE=example_1
 - example_10: Frequency of a word
 - example_11: Methods
 - example_12: Block & proc
+- example_13: Deep dive into proc
+- example_14: Lambda
 
 ## Tips
 
@@ -96,6 +125,23 @@ make run_example FILE=example_1
 ```
 
 - respond_to?(:method_name) => let you check if the value given can be used for the method, give a boolean value
+
+
+- convert array of mixed number int and string into array of integer:
+
+```rb
+
+array = [1, "2", 3, "4", 5]
+puts array.inspect
+
+# Solution 1
+array_1 = array.map { |i| i.to_i }
+puts array_1.inspect
+
+# Solution 2
+array_2 = array.map(&:to_i)
+puts array_2.inspect
+``` 
 
 ## Useful Resources
 
@@ -201,6 +247,19 @@ method_name(other_params, &proc_name)
 
 # the & is for casting the new proc into block
 
+proc_name.call(give_args) # reuse proc registered
+
+lambda { } # a special proc and wait for a specific number of argument 
+```
+
+```rb
+# turn the block into proc
+def method_name(params, &proc_name)
+  ...code
+  proc_name.call(give_args)
+end
+
+method_name(args) {...block_turn_into_proc}
 ```
 
 ## Sources

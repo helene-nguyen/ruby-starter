@@ -42,4 +42,15 @@ puts uppercase("test")
 puts uppercase(4)
 puts uppercase(%w{a b c d})
 
+# convert array of mixed number int and string into array of integer
 
+array = [1, "2", 3, "4", 5]
+puts array.inspect
+
+# Solution 1
+array_1 = array.map { |i| i.to_i }
+puts array_1.inspect
+
+# Solution 2
+array_2 = array.map(&:to_i)
+puts array_2.inspect
