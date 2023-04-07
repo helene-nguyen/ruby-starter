@@ -1,6 +1,6 @@
-![starter image](./media/starter.png)
-
 # Start with Ruby
+
+![starter image](./media/starter.png)
 
 ## Introduction
 
